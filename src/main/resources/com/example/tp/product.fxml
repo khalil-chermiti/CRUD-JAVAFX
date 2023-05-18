@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor" prefHeight="455.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp.controllers.ProductController">
+
+    <TableView fx:id="products" prefHeight="400.0" prefWidth="308.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="titleColumn" prefWidth="75.0" text="TITLE" />
+            <TableColumn fx:id="priceColumn" prefWidth="75.0" text="PRICE" />
+            <TableColumn fx:id="quantityColumn" maxWidth="800.0" prefWidth="85.0" text="QUANTITY" />
+        </columns>
+    </TableView>
+    <Label layoutX="419.0" layoutY="99.0" text="Add Product" AnchorPane.leftAnchor="419.0">
+        <font>
+            <Font size="39.0" />
+        </font>
+    </Label>
+    <TextField fx:id="title" layoutX="447.0" layoutY="182.0" promptText="Title" />
+    <TextField fx:id="price" layoutX="447.0" layoutY="233.0" promptText="Price" />
+    <TextField fx:id="quantity" layoutX="447.0" layoutY="283.0" promptText="Quantity" />
+    <Button layoutX="501.0" layoutY="332.0" mnemonicParsing="false" onAction="#addProduct" text="Button" AnchorPane.rightAnchor="228.0" />
+   <Button layoutX="127.0" layoutY="417.0" mnemonicParsing="false" onAction="#deleteProduct" text="Delete" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="603.0" />
+   <Button layoutX="701.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" text="logout" />
+</AnchorPane>
